@@ -26,7 +26,7 @@ export const useBlog = ({ id }: { id: string }) =>{
                 setBlog(response.data.blog);
                 setLoading(false)
             })
-    })
+    },[])
 
     return {
         loading,
@@ -48,7 +48,7 @@ export const useBlogs = () =>{
                 setBlogs(response.data.blogs);
                 setLoading(false)
             })
-    })
+    },[])
 
     return {
         loading,
